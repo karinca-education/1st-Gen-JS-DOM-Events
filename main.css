@@ -21,9 +21,11 @@ body {
   background-color: #cd8aff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.card {
-  top: 150px;
+.card { 
+  visibility: hidden;
   opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+  top: 150px;
   position: absolute;
   width: 550px;
   height: 297px;
@@ -31,7 +33,7 @@ body {
   background-color: white;
   padding: 72px 32px 46px 72px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition: 0.4s;
+  transition: all 0.4s;
 }
 
 h2.title {
